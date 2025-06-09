@@ -93,7 +93,7 @@ DATABASES = {
         'NAME': os.environ.get("DB_NAME", "notes_db"),
         'USER': os.environ.get("DB_USER", "root"),
         'PASSWORD': os.environ.get("DB_PASSWORD", "root"),
-        'HOST': os.environ.get("DB_HOST", "db_cont"),  # this matches the MySQL container name
+        'HOST': os.environ.get("DB_HOST", "mysql"),  # this matches the MySQL container name
         'PORT': os.environ.get("DB_PORT", "3306"),
     }  
 }
