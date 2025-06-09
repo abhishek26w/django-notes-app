@@ -89,12 +89,13 @@ WSGI_APPLICATION = 'notesapp.wsgi.application'
 
 DATABASES = {
   'default': {
+        'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get("DB_NAME", "notes_db"),
-        'USER': os.environ.get("DB_USER", "root"),
-        'PASSWORD': os.environ.get("DB_PASSWORD", "root"),
-        'HOST': os.environ.get("DB_HOST", "mysql"),  # this matches the MySQL container name
-        'PORT': os.environ.get("DB_PORT", "3306"),
+        'NAME': 'your_db_name',
+        'USER': 'your_db_user',
+        'PASSWORD': 'your_db_password',
+        'HOST': 'mysql',   # This should be the MySQL server hostname
+        'PORT': '3306',
     }  
 }
 
